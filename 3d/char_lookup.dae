@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.76.0 commit date:2015-11-03, commit time:10:56, hash:f337fea</authoring_tool>
+    </contributor>
+    <created>2017-08-01T16:08:17</created>
+    <modified>2017-08-01T16:08:17</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Armature" name="Armature" type="NODE">
+        <matrix sid="transform">5.31777 0 0 5.9627e-5 0 5.31777 0 -0.001480147 0 0 5.31777 0.146512 0 0 0 1</matrix>
+        <node id="Bone" name="Bone" sid="Bone" type="JOINT">
+          <matrix sid="transform">1 0 2.38419e-7 0 2.38419e-7 0 -0.9999999 0 0 0.9999999 1.19209e-7 -0.02431315 0 0 0 1</matrix>
+          <node id="Bone_001" name="Bone.001" sid="Bone_001" type="JOINT">
+            <matrix sid="transform">1 9.92565e-9 -2.38212e-7 0 0 0.9991331 0.0416312 0.04715756 2.38419e-7 -0.0416312 0.9991331 0 0 0 0 1</matrix>
+            <node id="Bone_002" name="Bone.002" sid="Bone_002" type="JOINT">
+              <matrix sid="transform">1 -5.91615e-16 -1.41985e-14 0 0 0.9991331 -0.0416312 0.05103023 1.42109e-14 0.04163119 0.9991331 -3.49246e-10 0 0 0 1</matrix>
+            </node>
+          </node>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

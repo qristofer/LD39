@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.76.0 commit date:2015-11-03, commit time:10:56, hash:f337fea</authoring_tool>
+    </contributor>
+    <created>2017-08-01T02:39:38</created>
+    <modified>2017-08-01T02:39:38</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_geometries>
+    <geometry id="Icosphere_005-mesh" name="Icosphere.005">
+      <mesh>
+        <source id="Icosphere_005-mesh-positions">
+          <float_array id="Icosphere_005-mesh-positions-array" count="21">0 0 0 -0.5625 -0.4375 0.75 0 -0.0625 1.5 -0.125 0.5 1.5 0.25 0.625 0.9375 0.4375 -0.3125 0.875 -0.6875 0.4375 0.75</float_array>
+          <technique_common>
+            <accessor source="#Icosphere_005-mesh-positions-array" count="7" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Icosphere_005-mesh-normals">
+          <float_array id="Icosphere_005-mesh-normals-array" count="21">0.04025411 0.01168864 0.9991212 -0.7735058 -0.1344975 0.619354 -0.359764 -0.8730108 0.3292751 0.1109071 -0.3484388 0.9307471 0.8160604 -0.5745903 0.0623818 0.9591292 0.1919967 0.2078667 0.6800305 -0.5134563 -0.523375</float_array>
+          <technique_common>
+            <accessor source="#Icosphere_005-mesh-normals-array" count="7" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Icosphere_005-mesh-map-0">
+          <float_array id="Icosphere_005-mesh-map-0-array" count="34">0.515625 0.6835938 0.515625 0.6503906 0.984375 0.6464844 0.984375 0.6835938 0.515625 0.6835938 0.515625 0.6503906 0.984375 0.6464844 0.984375 0.6835938 0.515625 0.6835938 0.515625 0.6503906 0.984375 0.6464844 0.515625 0.6503906 0.5625 0.5644531 0.984375 0.6464844 0.515625 0.6503906 0.5625 0.5644531 0.984375 0.6464844</float_array>
+          <technique_common>
+            <accessor source="#Icosphere_005-mesh-map-0-array" count="17" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Icosphere_005-mesh-vertices">
+          <input semantic="POSITION" source="#Icosphere_005-mesh-positions"/>
+        </vertices>
+        <polylist count="5">
+          <input semantic="VERTEX" source="#Icosphere_005-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Icosphere_005-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Icosphere_005-mesh-map-0" offset="2" set="0"/>
+          <vcount>4 4 3 3 3 </vcount>
+          <p>3 0 0 6 1 1 1 2 2 2 3 3 2 3 4 5 4 5 4 5 6 3 0 7 2 3 8 1 2 9 5 4 10 5 4 11 0 6 12 4 5 13 1 2 14 0 6 15 5 4 16</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Icosphere_005" name="Icosphere_005" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 4.3125 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#Icosphere_005-mesh" name="Icosphere_005"/>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
